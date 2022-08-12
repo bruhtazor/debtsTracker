@@ -1,3 +1,4 @@
+import 'package:debts_tracker/add_new_widget.dart';
 import 'package:flutter/material.dart';
 import 'overview_widget.dart';
 
@@ -13,9 +14,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.red,
-        scaffoldBackgroundColor: const Color(0xFF1E1E1E),
-      ),
+          primarySwatch: Colors.red,
+          scaffoldBackgroundColor: const Color(0xFF1E1E1E),
+          inputDecorationTheme: const InputDecorationTheme(
+            enabledBorder: UnderlineInputBorder(
+              borderSide:
+                  BorderSide(width: 2, color: Color.fromARGB(255, 90, 90, 90)),
+            ),
+            hintStyle: TextStyle(color: Colors.white),
+          )),
       home: const RootPage(),
     );
   }
@@ -47,7 +54,8 @@ class _RootPageState extends State<RootPage> {
               OverviewWidget(),
               OverviewWidget(),
               OverviewWidget(),
-              OverviewWidget()
+              OverviewWidget(),
+              AddNewWidget()
             ],
           ),
         ),

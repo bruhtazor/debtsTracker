@@ -12,10 +12,10 @@ class _OverviewWidgetState extends State<OverviewWidget> {
   Widget build(BuildContext context) {
     return Container(
       width: (MediaQuery.of(context).size.height),
-      height: 200,
+      height: 145,
       decoration: BoxDecoration(
         color: const Color(0xFF3C3C3C),
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(7),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.5),
@@ -50,7 +50,7 @@ class _OverviewWidgetState extends State<OverviewWidget> {
               ],
             ),
             const Padding(
-              padding: EdgeInsets.only(top: 80),
+              padding: EdgeInsets.only(top: 60),
               child: Text(
                 "debts:100chf",
                 style: TextStyle(
