@@ -14,13 +14,13 @@ class _FormWidgetState extends State<FormWidget> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-      child: Container(
+      child: SizedBox(
         height: 300,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             TextFormField(
-              style: const TextStyle(color: Color.fromARGB(255, 90, 90, 90)),
+              style: const TextStyle(color: Colors.white),
               decoration: const InputDecoration(
                 hintText: "Name",
                 hintStyle: TextStyle(
@@ -28,7 +28,7 @@ class _FormWidgetState extends State<FormWidget> {
               ),
             ),
             TextFormField(
-              style: const TextStyle(color: Color.fromARGB(255, 90, 90, 90)),
+              style: const TextStyle(color: Colors.white),
               decoration: const InputDecoration(
                 hintText: "Surname",
                 hintStyle: TextStyle(
@@ -37,7 +37,7 @@ class _FormWidgetState extends State<FormWidget> {
             ),
             TextFormField(
               keyboardType: TextInputType.number,
-              style: const TextStyle(color: Color.fromARGB(255, 90, 90, 90)),
+              style: const TextStyle(color: Colors.white),
               decoration: const InputDecoration(
                 hintText: "Amount",
                 hintStyle: TextStyle(
@@ -48,7 +48,7 @@ class _FormWidgetState extends State<FormWidget> {
               value: dropdownValue,
               elevation: 16,
               dropdownColor: const Color(0xFF1E1E1E),
-              style: const TextStyle(color: Color.fromARGB(255, 90, 90, 90)),
+              style: const TextStyle(color: Colors.white),
               underline: Container(
                 height: 2,
                 color: const Color.fromARGB(255, 90, 90, 90),
